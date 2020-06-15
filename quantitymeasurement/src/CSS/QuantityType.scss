@@ -1,0 +1,9 @@
+$backgraound-color: #f5f6fa;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $backgraound-color;
+}

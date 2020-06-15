@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button/";
 import "../CSS/Home.scss";
 import TopBar from "./TopBar";
+import QuantityType from "./QuantityType";
 
 class Home extends Component {
   render() {
@@ -11,6 +11,7 @@ class Home extends Component {
         <div className="header">
           <span className="header-text">Welcome To Quantity Measurement</span>
         </div>
+        <QuantityType />
       </div>
     );
   }
