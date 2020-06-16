@@ -13,9 +13,11 @@ class Home extends Component {
             Welcome To Quantity Measurement
           </span>
         </div>
-        <div className="choosetype">
-          <span className="choosetype-text">CHOOSE TYPE</span>
-          <QuantityType />
+        <div className="optiontype">
+          <div className="home-choosetype">
+            <div className="home-choosetype-text">CHOOSE TYPE</div>
+            <QuantityType />
+          </div>
         </div>
       </div>
     );

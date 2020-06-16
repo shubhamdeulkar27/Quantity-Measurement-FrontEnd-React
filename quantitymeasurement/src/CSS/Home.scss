@@ -2,14 +2,10 @@ $background-color: #446dff;
 $font-color: #ffffff;
 $main-background-color: #f5f6fa;
 
-.choosetype {
+.optiontype {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-}
-.choosetype-text {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
+  justify-content: center;
 }
 
 .home {
@@ -27,12 +23,27 @@ $main-background-color: #f5f6fa;
     &-text {
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
-      font-size: 3.5vh;
+      font-size: 25px;
       line-height: 30px;
       letter-spacing: 0px;
       color: $font-color;
       text-transform: capitalize;
       opacity: 1;
     }
+  }
+
+  &-choosetype {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &-choosetype-text {
+    text-align: left;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
   }
 }
