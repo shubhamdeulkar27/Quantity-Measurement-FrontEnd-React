@@ -1,9 +1,101 @@
 $backgraound-color: #f5f6fa;
 
-.container {
+$image1-backgraound-color: #edfdf9;
+$image2-backgraound-color: #ffeef0;
+$image3-backgraound-color: #e8ddff;
+$hover-lenght-color: #0ec098;
+$hover-temperature-color: #fd5160;
+$hover-volume-color: #7224ff;
+
+.parentcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantitycontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: $backgraound-color;
+  background-position: unset;
+  width: 40%;
+
+  &-length {
+    width: 173px;
+    height: 137px;
+    background: url("../Assets/scale-inactive.png") no-repeat;
+    background-position: center;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &-length:hover {
+    background: url("../Assets/scale.png") no-repeat;
+    background-color: $image1-backgraound-color;
+    background-position: center;
+    border: solid;
+    border-width: 1px;
+    border-color: $hover-lenght-color;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: $hover-lenght-color;
+  }
+
+  &-temperature {
+    width: 173px;
+    height: 137px;
+    background: url("../Assets/hot-inactive.png") no-repeat;
+    display: inline-block;
+    background-position: center;
+    background-color: white;
+    border-radius: 7px;
+    border-width: 1px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  &-temperature:hover {
+    background: url("../Assets/hot.png") no-repeat;
+    background-color: $image2-backgraound-color;
+    background-position: center;
+    border: solid;
+    border-width: 1px;
+    border-color: $hover-temperature-color;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: $hover-temperature-color;
+  }
+
+  &-volume {
+    width: 173px;
+    height: 137px;
+    background: url("../Assets/beaker-inactive.png") no-repeat;
+    display: inline-block;
+    background-position: center;
+    background-color: white;
+    border-radius: 7px;
+    border-width: 1px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &-volume:hover {
+    background: url("../Assets/beaker.png") no-repeat;
+    background-color: $image1-backgraound-color;
+    background-position: center;
+    border: solid;
+    border-width: 1px;
+    border-color: $hover-volume-color;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: $hover-volume-color;
+  }
 }

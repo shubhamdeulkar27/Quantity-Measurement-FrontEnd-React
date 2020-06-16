@@ -7,6 +7,7 @@ import scale from "../Assets/scale.png";
 import inactivehot from "../Assets/hot-inactive.png";
 import hot from "../Assets/hot.png";
 import inactivebeaker from "../Assets/beaker-inactive.png";
+import beaker from "../Assets/beaker.png";
 
 class QuantityType extends Component {
   myfunction() {
@@ -15,16 +16,12 @@ class QuantityType extends Component {
 
   render() {
     return (
-      <div className="container">
-        <Button>
-          <img src={inactivescale} alt="Scale" onClick={this.myfunction}></img>
-        </Button>
-        <Button>
-          <img src={inactivehot} alt="Scale" onClick={this.myfunction}></img>
-        </Button>
-        <Button>
-          <img src={inactivebeaker} alt="Scale" onClick={this.myfunction}></img>
-        </Button>
+      <div className="parentcontainer">
+        <div className="quantitycontainer">
+          <div className="quantitycontainer-length">Length</div>
+          <div className="quantitycontainer-temperature">Temperature</div>
+          <div className="quantitycontainer-volume">Volume</div>
+        </div>
       </div>
     );
   }

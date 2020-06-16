@@ -6,12 +6,17 @@ import QuantityType from "./QuantityType";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="home">
         <TopBar />
-        <div className="header">
-          <span className="header-text">Welcome To Quantity Measurement</span>
+        <div className="home-header">
+          <span className="home-header-text">
+            Welcome To Quantity Measurement
+          </span>
         </div>
-        <QuantityType />
+        <div className="choosetype">
+          <span className="choosetype-text">CHOOSE TYPE</span>
+          <QuantityType />
+        </div>
       </div>
     );
   }

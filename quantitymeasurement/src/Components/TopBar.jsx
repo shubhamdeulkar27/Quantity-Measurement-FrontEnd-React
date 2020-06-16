@@ -3,11 +3,11 @@ import "../CSS/TopBar.scss";
 
 function TopBar(props) {
   return (
-    <div className="container">
-      <div className="quantment">Quantment</div>
+    <div className="topbarcontainer">
+      <div className="topbarcontainer-quantment">Quantment</div>
       <div />
       <div />
-      <div className="history">History</div>
+      <div className="topbarcontainer-history">History</div>
       <div></div>
     </div>
   );

@@ -1,14 +1,14 @@
 $font-color: #000000;
 $background-color: #301818;
 
-.container {
+.topbarcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   min-height: 75px;
 
-  .quantment {
+  &-quantment {
     text-align: left;
     font-family: "Poppins", sans-serif;
     font-size: 21px;
@@ -20,7 +20,7 @@ $background-color: #301818;
     cursor: pointer;
   }
 
-  .history {
+  &-history {
     text-align: left;
     font-family: "Poppins", sans-serif;
     font-size: 15px;

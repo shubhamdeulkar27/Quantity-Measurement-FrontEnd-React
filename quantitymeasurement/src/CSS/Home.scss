@@ -2,20 +2,37 @@ $background-color: #446dff;
 $font-color: #ffffff;
 $main-background-color: #f5f6fa;
 
-.header {
-  background: $background-color;
-  padding: 22px;
-  flex: 0 0 auto;
+.choosetype {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.choosetype-text {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
 
-  &-text {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 3.5vh;
-    line-height: 30px;
-    letter-spacing: 0px;
-    color: $font-color;
-    text-transform: capitalize;
-    opacity: 1;
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $main-background-color;
+
+  &-header {
+    background: $background-color;
+    padding: 22px;
+    flex: 0 0 auto;
+    text-align: center;
+
+    &-text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 3.5vh;
+      line-height: 30px;
+      letter-spacing: 0px;
+      color: $font-color;
+      text-transform: capitalize;
+      opacity: 1;
+    }
   }
 }
