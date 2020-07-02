@@ -1,51 +1,91 @@
-$background-color: #446dff;
-$font-color: #ffffff;
-$main-background-color: #f5f6fa;
-
 .home {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: $main-background-color;
-  height: 100vh;
+  align-content: center;
+}
 
-  &-header {
-    background: $background-color;
-    padding: 22px;
-    flex: 0 0 auto;
-    text-align: center;
+.choostypemain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-    &-text {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 30px;
-      letter-spacing: 0px;
-      color: $font-color;
-      text-transform: capitalize;
-      opacity: 1;
-    }
+.choostype {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin-top: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 487px;
+}
+
+/* For Mobile Devices*/
+@media only screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+  }
+
+  .choostypemain {
+    width: 99%;
+    padding-top: 50px;
+  }
+
+  .choostype {
+    width: 94%;
   }
 }
 
-.parentchoosetype {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+/* For Ipad*/
+@media only screen and (max-width: 768px) and (min-height: 1024px) {
+  .home {
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .choostypemain {
+    width: 99%;
+    padding-top: 50px;
+  }
+
+  .choostype {
+    width: 77%;
+    font-size: 25px;
+  }
 }
 
-.choosetype {
-  display: flex;
-  flex-direction: column;
+/* For Iphone 5 and SE*/
+@media only screen and (max-width: 320px) and (min-height: 568px) {
+  .home {
+    width: 100%;
+  }
 
-  &-text {
-    text-align: left;
-    padding-top: 40px;
-    line-height: 19px;
-    padding-bottom: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+  .choostypemain {
+    width: 99%;
+    padding-top: 0px;
+  }
+
+  .choostype {
+    width: 94%;
     font-size: 15px;
+    margin-top: 80px;
+  }
+}
+
+/* For Ipad Pro*/
+@media only screen and (max-width: 1024px) and (min-height: 1366px) {
+  .home {
+    margin-top: 150px;
+    width: 100%;
+  }
+
+  .choostypemain {
+    width: 99%;
+    padding-top: 50px;
+  }
+
+  .choostype {
+    width: 77%;
+    font-size: 30px;
   }
 }
