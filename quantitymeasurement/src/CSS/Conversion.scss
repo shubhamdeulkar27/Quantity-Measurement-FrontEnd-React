@@ -1,36 +1,199 @@
-.main {
+$backgraound-color: #f5f6fa;
+
+$image1-backgraound-color: #edfdf9;
+$image2-backgraound-color: #ffeef0;
+$image3-backgraound-color: #e8ddff;
+$hover-length-color: #0ec098;
+$hover-temperature-color: #fd5160;
+$hover-volume-color: #7224ff;
+
+.conversionmain {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-left: 67vh;
-  margin-right: 67vh;
-  align-items: cenxter;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.form {
-  width: 50px;
-}
-.formControl {
-  margin: 1vh;
-  min-width: 500;
-}
-
-.selectEmpty {
-  margin-top: 2vw;
-}
-.subdiv {
+.conversion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.input {
-  height: 45px;
-  width: 280px;
+.button {
+  width: 150px;
+  height: 137px;
+  border: hidden;
+  border-width: 1px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  margin: 10px;
+  outline: none;
 }
 
-.select {
-  height: 45px;
-  width: 280px;
+.length {
+  background-color: $image1-backgraound-color;
+  border: solid;
+  border-width: 1px;
+  border-color: $hover-length-color;
+  border-radius: 7px;
+  color: $hover-length-color;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.temperature {
+  background-color: $image2-backgraound-color;
+  border: solid;
+  border-width: 1px;
+  border-color: $hover-temperature-color;
+  border-radius: 7px;
+  color: $hover-temperature-color;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.volume {
+  background-color: $image3-backgraound-color;
+  border: solid;
+  border-width: 1px;
+  border-color: $hover-volume-color;
+  border-radius: 7px;
+  color: $hover-volume-color;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lengthtext {
+  padding-top: 15px;
+}
+.temperaturetext {
+  padding-top: 7px;
+}
+
+.volumetext {
+  padding-top: 15px;
+}
+
+.lengthimg {
+}
+
+.temperatureimg {
+}
+
+.volumeimg {
+}
+
+/* For Mobile Devices*/
+@media only screen and (max-width: 768px) {
+  .conversionmain {
+    height: auto;
+    width: 100%;
+  }
+
+  .conversion {
+    height: auto;
+    width: 100%;
+  }
+
+  .button {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* For Ipad*/
+@media only screen and (max-width: 768px) and (min-height: 1024px) {
+  .conversionmain {
+    height: auto;
+    width: 100%;
+  }
+
+  .conversion {
+    height: auto;
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  .button {
+    height: 145px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .lengthimg {
+    width: 18px;
+    height: 69px;
+  }
+  .temperatureimg {
+    width: 45px;
+    height: 87px;
+  }
+
+  .volumeimg {
+    width: 72px;
+    height: 75px;
+  }
+}
+
+/* For Iphone 5 and SE*/
+@media only screen and (max-width: 320px) and (min-height: 568px) {
+  .conversionmain {
+    height: auto;
+    width: 100%;
+  }
+
+  .conversion {
+    height: auto;
+    width: 100%;
+  }
+
+  .button {
+    height: auto;
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+/* For Ipad Pro*/
+@media only screen and (max-width: 1024px) and (min-height: 1366px) {
+  .conversionmain {
+    height: auto;
+    width: 100%;
+  }
+
+  .conversion {
+    height: auto;
+    width: 79%;
+    margin-top: 20px;
+  }
+
+  .button {
+    height: 190px;
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .lengthimg {
+    width: 24px;
+    height: 92px;
+  }
+  .temperatureimg {
+    width: 60px;
+    height: 116px;
+  }
+
+  .volumeimg {
+    width: 96px;
+    height: 100px;
+  }
+  .lengthtext {
+    padding-top: 15px;
+  }
+  .temperaturetext {
+    padding-top: 7px;
+  }
+
+  .volumetext {
+    padding-top: 15px;
+  }
 }
