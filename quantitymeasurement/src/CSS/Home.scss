@@ -2,17 +2,12 @@ $background-color: #446dff;
 $font-color: #ffffff;
 $main-background-color: #f5f6fa;
 
-.optiontype {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: $main-background-color;
+  height: 100vh;
 
   &-header {
     background: $background-color;
@@ -31,17 +26,24 @@ $main-background-color: #f5f6fa;
       opacity: 1;
     }
   }
+}
 
-  &-choosetype {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
+.parentchoosetype {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  &-choosetype-text {
+.choosetype {
+  display: flex;
+  flex-direction: column;
+
+  &-text {
     text-align: left;
-    padding: 15px;
+    padding-top: 40px;
+    line-height: 19px;
+    padding-bottom: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 15px;

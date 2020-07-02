@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "../CSS/Home.scss";
 import TopBar from "./TopBar";
+import "../CSS/QuantityType.scss";
 import QuantityType from "./QuantityType";
+import Conversion from "./Conversion";
 
 class Home extends Component {
   render() {
@@ -13,11 +15,14 @@ class Home extends Component {
             Welcome To Quantity Measurement
           </span>
         </div>
-        <div className="optiontype">
-          <div className="home-choosetype">
-            <div className="home-choosetype-text">CHOOSE TYPE</div>
+        <div className="parentchoosetype">
+          <div className="choosetype">
+            <div className="choosetype-text">CHOOSE TYPE</div>
             <QuantityType />
           </div>
+        </div>
+        <div>
+          <Conversion />
         </div>
       </div>
     );

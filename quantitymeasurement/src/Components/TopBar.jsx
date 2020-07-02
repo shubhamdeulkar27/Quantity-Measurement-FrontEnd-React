@@ -7,6 +7,7 @@ function TopBar(props) {
       <div className="topbarcontainer-quantment">Quanment</div>
       <div />
       <div />
+      <div />
       <div className="topbarcontainer-history">History</div>
       <div></div>
     </div>

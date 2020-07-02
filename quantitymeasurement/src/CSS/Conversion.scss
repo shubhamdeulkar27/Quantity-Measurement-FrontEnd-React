@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-left: 67vh;
+  margin-right: 67vh;
+  align-items: cenxter;
+}
+
+.form {
+  width: 50px;
+}
+.formControl {
+  margin: 1vh;
+  min-width: 500;
+}
+
+.selectEmpty {
+  margin-top: 2vw;
+}
+.subdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input {
+  height: 45px;
+  width: 280px;
+}
+
+.select {
+  height: 45px;
+  width: 280px;
+}

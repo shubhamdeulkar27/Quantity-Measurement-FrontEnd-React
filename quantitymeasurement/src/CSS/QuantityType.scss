@@ -7,24 +7,19 @@ $hover-length-color: #0ec098;
 $hover-temperature-color: #fd5160;
 $hover-volume-color: #7224ff;
 
-.parentcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
+.text {
+  padding-top: 5px;
 }
+
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   background-color: $backgraound-color;
-  background-position: unset;
-  width: 40%;
+  align-self: center;
 
   &-length {
-    width: 173px;
+    width: 150px;
     height: 137px;
     border: hidden;
     border-width: 1px;
@@ -46,7 +41,7 @@ $hover-volume-color: #7224ff;
   }
 
   &-temperature {
-    width: 173px;
+    width: 150px;
     height: 137px;
     border: hidden;
     border-width: 1px;
@@ -68,7 +63,7 @@ $hover-volume-color: #7224ff;
   }
 
   &-volume {
-    width: 173px;
+    width: 150px;
     height: 137px;
     border: hidden;
     border-width: 1px;
@@ -88,4 +83,10 @@ $hover-volume-color: #7224ff;
     font-family: "Montserrat", sans-serif;
     color: $hover-volume-color;
   }
+}
+.lengthtext {
+  padding-top: 15px;
+}
+.volumetext {
+  padding-top: 15px;
 }

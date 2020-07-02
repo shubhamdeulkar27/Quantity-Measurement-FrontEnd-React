@@ -49,57 +49,35 @@ class QuantityTypeOne extends Component {
     });
   }
 
-  lengthHandleMouseOut() {
-    this.setState({
-      lengthImgSrc: inactivescale,
-    });
-  }
-  temperatureHandleMouseOut() {
-    this.setState({
-      temperatureImgSrc: inactivehot,
-    });
-  }
-  volumeHandleMouseOut() {
-    this.setState({
-      volumeImgSrc: inactivebeaker,
-    });
-  }
-
   render() {
     return (
-      <div className="parentcontainer">
-        <div className="container">
-          <button
-            className="container-length"
-            onMouseEnter={this.lengthHandleMouseOver}
-            onMouseLeave={this.lengthHandleMouseOut}
-            onSelect={this.lengthHandleSelect}
-          >
-            <img src={this.state.lengthImgSrc} />
-            <div>Length</div>
-          </button>
-        </div>
+      <div className="container">
+        <button
+          className="container-length"
+          onMouseEnter={this.lengthHandleMouseOver}
+          onMouseLeave={this.lengthHandleMouseOut}
+          onSelect={this.lengthHandleSelect}
+        >
+          <img src={this.state.lengthImgSrc} />
+          <div className="lengthtext">Length</div>
+        </button>
 
-        <div className="container">
-          <button
-            className="container-temperature"
-            onMouseOver={this.temperatureHandleMouseOver}
-            onMouseOut={this.temperatureHandleMouseOut}
-          >
-            <img src={this.state.temperatureImgSrc} />
-            <div>Temperature</div>
-          </button>
-        </div>
-        <div className="container">
-          <button
-            className="container-volume"
-            onMouseOver={this.volumeHandleMouseOver}
-            onMouseOut={this.volumeHandleMouseOut}
-          >
-            <img src={this.state.volumeImgSrc} />
-            <div>Volume</div>
-          </button>
-        </div>
+        <button
+          className="container-temperature"
+          onMouseOver={this.temperatureHandleMouseOver}
+          onMouseOut={this.temperatureHandleMouseOut}
+        >
+          <img src={this.state.temperatureImgSrc} />
+          <div className="text">Temperature</div>
+        </button>
+        <button
+          className="container-volume"
+          onMouseOver={this.volumeHandleMouseOver}
+          onMouseOut={this.volumeHandleMouseOut}
+        >
+          <img src={this.state.volumeImgSrc} />
+          <div className="volumetext">Volume</div>
+        </button>
       </div>
     );
   }
