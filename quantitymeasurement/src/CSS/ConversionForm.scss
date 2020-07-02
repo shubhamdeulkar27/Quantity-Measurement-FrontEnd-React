@@ -1,0 +1,201 @@
+.formmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 645px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.formtext {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+  opacity: 62%;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.input {
+  width: 200px;
+  height: 40px;
+  border: solid;
+  border-width: thin;
+  border-radius: 3px;
+  border-color: #e7dcfe;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 15px;
+  outline: none;
+}
+.input::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.select {
+  width: 206px;
+  height: 40px;
+  border: solid;
+  border-width: thin;
+  border-radius: 3px;
+  border-color: #e7dcfe;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 15px;
+  outline: none;
+}
+
+.output {
+  width: 200px;
+  height: 100px;
+  border: solid;
+  border-width: thin;
+  border-radius: 3px;
+
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.div {
+  margin-top: 30px;
+}
+
+/* For Mobile Devices*/
+@media only screen and (max-width: 768px) {
+  .formmain {
+    width: 103%;
+    margin-top: 45px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input {
+    width: 85%;
+    height: 30px;
+    font-size: 17px;
+  }
+  .select {
+    width: 88%;
+    height: 30px;
+  }
+  .div {
+    width: 94%;
+    padding-left: 2px;
+    margin-top: 15px;
+  }
+}
+
+.option {
+}
+
+/* For Ipad*/
+@media only screen and (max-width: 768px) and (min-height: 1024px) {
+  .formmain {
+    width: 109%;
+    margin-top: 90px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input {
+    width: 80%;
+    font-size: 30px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .select {
+    width: 82%;
+    font-size: 20px;
+    height: 50px;
+  }
+  .div {
+    width: 76%;
+  }
+
+  .formtext {
+    font-size: 18px;
+  }
+  .option {
+    font-size: 10px;
+  }
+}
+
+/* For Iphone 5 and SE*/
+@media only screen and (max-width: 320px) and (min-height: 568px) {
+  .formmain {
+    width: 103%;
+    margin-top: 45px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input {
+    width: 85%;
+    height: auto;
+    font-size: 15px;
+  }
+  .select {
+    width: 88%;
+    height: 30px;
+    font-size: 10px;
+  }
+  .div {
+    width: 94%;
+    padding-left: 2px;
+    margin-top: 0px;
+  }
+}
+
+/* For Ipad Pro*/
+@media only screen and (max-width: 1024px) and (min-height: 1366px) {
+  .formmain {
+    width: 109%;
+    margin-top: 90px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input {
+    width: 80%;
+    font-size: 35px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .select {
+    width: 82%;
+    font-size: 30px;
+    height: 60px;
+  }
+  .div {
+    width: 76%;
+  }
+
+  .formtext {
+    font-size: 25px;
+  }
+  .option {
+    font-size: 10px;
+  }
+}
